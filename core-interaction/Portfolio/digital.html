@@ -1,0 +1,281 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+      <meta charset="utf-8">
+      <meta name="description" content="A page for exploring basic HTML documents">
+      <title>Portfolio Site</title>
+      <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" type="text/css" href="styles.css">
+      <script src="myscript.js"></script>
+      <script>
+          window.onload = function() {setTimeout(function(){document.body.style.opacity="100";},500);};
+      </script>
+  </head>
+
+  <body>
+
+  <style> body{opacity:0;} </style>
+
+  <div class="dropdown">
+    <button onclick="myFunction()" class="dropbtn">Menu</button>
+      <div id="myDropdown" class="dropdown-content">
+        <a class="menu-links" href="portfolio.html">Back</a>
+        <a class="menu-links" href="index.html">Home</a>
+        <a class="menu-links" href="about.html">About</a>
+        <a class="menu-links" href="digital.html">Digital</a>
+        <a class="menu-links" href="drawing.html">Drawing</a>
+        <a class="menu-links" href="painting.html">Painting</a>
+        <a class="menu-links" href="photography.html">Photography</a>
+      </div>
+  </div>
+
+  <div class ="social">
+    <a href="https://www.instagram.com/rashikashi/" class="fa fa-instagram"></a>
+    <a href="https://www.pinterest.com/rashikashi/" class="fa fa-pinterest"></a>
+  </div>
+
+  <h3> Digital </h3>
+
+  <div class="row">
+    <div class="column">
+      <img src="Digital/abstract.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+      <img src="Digital/and.png" style="width:100%" onclick="openModal();currentSlide(5)" class="hover-shadow cursor">
+      <img src="Digital/redBalloonFlyerFinal.jpg" style="width:100%" onclick="openModal();currentSlide(9)" class="hover-shadow cursor">
+      <img src="Digital/glasses.jpg" style="width:100%" onclick="openModal();currentSlide(13)" class="hover-shadow cursor">
+      <img src="Digital/trebbleClef.jpg" style="width:100%" onclick="openModal();currentSlide(17)" class="hover-shadow cursor">
+<<<<<<< HEAD
+      <video controls muted src="Videos/joker.mp4" type="video/mp4" style="width:100%" onclick="openModal();currentSlide(21)" class="hover-shadow cursor"></video>
+=======
+      <video autoplay muted src="Videos/joker.mp4" type="video/mp4" style="width:100%" onclick="openModal();currentSlide(21)" class="hover-shadow cursor"></video>
+>>>>>>> parent of 98458e2... vids
+    </div>
+
+    <div class="column">
+      <img src="Digital/joker.png" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+      <img src="Digital/butterfly.jpg" style="width:100%" onclick="openModal();currentSlide(6)" class="hover-shadow cursor">
+      <img src="Digital/shirt.JPG" style="width:100%" onclick="openModal();currentSlide(10)" class="hover-shadow cursor">
+      <img src="Digital/findingYourself.jpg" style="width:100%" onclick="openModal();currentSlide(14)" class="hover-shadow cursor">
+      <img src="Digital/treeStump.jpg"style="width:100%" onclick="openModal();currentSlide(18)" class="hover-shadow cursor">
+<<<<<<< HEAD
+      <video controls muted src="Videos/manifesto.mp4" type="video/mp4" style="width:100%" onclick="openModal();currentSlide(22)" class="hover-shadow cursor"></video>
+=======
+      <video autoplay muted src="Videos/manifesto.mp4" type="video/mp4" style="width:100%" onclick="openModal();currentSlide(22)" class="hover-shadow cursor"></video>
+>>>>>>> parent of 98458e2... vids
+
+    </div>
+
+    <div class="column">
+      <img src="Digital/rupi.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+      <img src="Digital/multiplicity_rkrishan.jpg" style="width:100%" onclick="openModal();currentSlide(7)" class="hover-shadow cursor">
+      <img src="Digital/girl.png" style="width:100%" onclick="openModal();currentSlide(11)" class="hover-shadow cursor">
+      <img src="Digital/dandelion.png" style="width:100%" onclick="openModal();currentSlide(15)" class="hover-shadow cursor">
+      <img src="Digital/wildLeaves.jpg"style="width:100%" onclick="openModal();currentSlide(19)" class="hover-shadow cursor">
+<<<<<<< HEAD
+      <video controls muted src="Videos/accordian.mp4" type="video/mp4" style="width:100%" onclick="openModal();currentSlide(23)" class="hover-shadow cursor"></video>
+=======
+      <video autoplay muted src="Videos/accordian.mp4" type="video/mp4" style="width:100%" onclick="openModal();currentSlide(23)" class="hover-shadow cursor"></video>
+>>>>>>> parent of 98458e2... vids
+    </div>
+
+    <div class="column">
+      <img src="Digital/fishies.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+      <img src="Digital/sunTat.jpg" style="width:100%" onclick="openModal();currentSlide(8)" class="hover-shadow cursor">
+      <img src="Digital/milkyway.jpg" style="width:100%" onclick="openModal();currentSlide(12)" class="hover-shadow cursor">
+      <img src="Digital/alienflower.jpg" style="width:100%" onclick="openModal();currentSlide(16)" class="hover-shadow cursor">
+      <img src="Digital/harrypotter.jpg" style="width:100%" onclick="openModal();currentSlide(20)" class="hover-shadow cursor">
+<<<<<<< HEAD
+      <video controls muted src="Videos/wateronmars.mp4" type="video/mp4" style="width:100%" onclick="openModal();currentSlide(24)" class="hover-shadow cursor"></video>
+=======
+      <video autoplay muted src="Videos/wateronmars.mp4" type="video/mp4" style="width:100%" onclick="openModal();currentSlide(24)" class="hover-shadow cursor"></video>
+>>>>>>> parent of 98458e2... vids
+    </div>
+  </div>
+
+  <div id="myModal" class="modal">
+    <span class="close cursor" onclick="closeModal()">&times;</span>
+    <div class="modal-content">
+
+      <div class="mySlides">
+        <div class="numbertext">1 / 20</div>
+        <img src="Digital/abstract.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">2 / 20</div>
+        <img src="Digital/joker.png" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">3 / 20</div>
+        <img src="Digital/rupi.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">4 / 20</div>
+        <img src="Digital/fishies.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">5 / 20</div>
+        <img src="Digital/and.png" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">6 / 20</div>
+        <img src="Digital/butterfly.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">7 / 20</div>
+        <img src="Digital/multiplicity_rkrishan.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">8 / 20</div>
+        <img src="Digital/sunTat.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">9 / 20</div>
+        <img src="Digital/redBalloonFlyerFinal.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">10 / 20</div>
+        <img src="Digital/shirt.JPG" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">11 / 20</div>
+        <img src="Digital/girl.png" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">12 / 20</div>
+        <img src="Digital/milkyway.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">13 / 20</div>
+        <img src="Digital/glasses.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">14 / 20</div>
+        <img src="Digital/findingYourself.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">15 / 20</div>
+        <img src="Digital/dandelion.png" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">16 / 20</div>
+        <img src="Digital/alienflower.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">17 / 20</div>
+        <img src="Digital/trebbleClef.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">18 / 20</div>
+        <img src="Digital/treeStump.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">19 / 20</div>
+        <img src="Digital/wildLeaves.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">20 / 20</div>
+        <img src="Digital/harrypotter.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">21 / 20</div>
+        <video autoplay muted src="Videos/joker.mp4" type="video/mp4" style="width:100%"></video>
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">22 / 20</div>
+<<<<<<< HEAD
+        <video controls autoplay muted src="Videos/manifesto.mp4" type="video/mp4" style="width:100%"></video>
+=======
+        <video autoplay muted src="Videos/manifesto.mp4" type="video/mp4" style="width:100%"></video>
+>>>>>>> parent of 98458e2... vids
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">23 / 20</div>
+        <video autoplay muted src="Videos/accordian.mp4" type="video/mp4" style="width:100%"></video>
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">24 / 20</div>
+<<<<<<< HEAD
+        <video controls autoplay muted src="Videos/wateronmars.mp4" type="video/mp4" style="width:100%"></video>
+=======
+        <video autoplay muted src="Videos/wateronmars.mp4" type="video/mp4" style="width:100%"></video>
+>>>>>>> parent of 98458e2... vids
+      </div>
+
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+      <div class="caption-container">
+        <p id="caption"></p>
+      </div>
+
+
+      <div class="column"> <!-- this is actually in rows -->
+        <img class="demo cursor" src="Digital/abstract.jpg" style="width:100%" onclick="currentSlide(1)" alt="Abstract">
+        <img class="demo cursor" src="Digital/and.png" style="width:100%" onclick="currentSlide(5)" alt="Joker">
+        <img class="demo cursor" src="Digital/redBalloonFlyerFinal.jpg" style="width:100%" onclick="currentSlide(9)" alt="Rupi Kaur Event Poster">
+        <img class="demo cursor" src="Digital/glasses.jpg" style="width:100%" onclick="currentSlide(13)" alt="Fish">
+        <img class="demo cursor" src="Digital/trebbleClef.jpg" style="width:100%" onclick="currentSlide(17)" alt="And Composition">
+        <video autoplay muted class="demo cursor" src="Videos/joker.mp4" type="video/mp4" style="width:100%" onclick="currentSlides(21)" alt="Joker Book"></video>
+      </div>
+
+      <div class="column">
+        <img class="demo cursor" src="Digital/joker.png" style="width:100%" onclick="currentSlide(2)" alt="Butterfly">
+        <img class="demo cursor" src="Digital/butterfly.jpg" style="width:100%" onclick="currentSlide(6)" alt="Multiplicity">
+        <img class="demo cursor" src="Digital/shirt.JPG" style="width:100%" onclick="currentSlide(10)" alt="Sun Tattoo Design">
+        <img class="demo cursor" src="Digital/findingYourself.jpg" style="width:100%" onclick="currentSlide(14)" alt="Red Balloon Event Poster">
+        <img class="demo cursor" src="Digital/treeStump.jpg" style="width:100%" onclick="currentSlide(18)" alt="Tshirt Design">
+<<<<<<< HEAD
+        <video controls autoplay muted class="demo cursor" src="Videos/manifesto.mp4" type="video/mp4" style="width:100%" onclick="currentSlides(22)" alt="Science Fiction Manifesto"></video>
+=======
+        <video autoplay muted class="demo cursor" src="Videos/manifesto.mp4" type="video/mp4" style="width:100%" onclick="currentSlides(22)" alt="Science Fiction Manifesto"></video>
+>>>>>>> parent of 98458e2... vids
+      </div>
+
+      <div class="column">
+        <img class="demo cursor" src="Digital/rupi.jpg" style="width:100%" onclick="currentSlide(3)" alt="Girl">
+        <img class="demo cursor" src="Digital/multiplicity_rkrishan.jpg" style="width:100%" onclick="currentSlide(7)" alt="Milkyway">
+        <img class="demo cursor" src="Digital/girl.png" style="width:100%" onclick="currentSlide(11)" alt="Sunglasses">
+        <img class="demo cursor" src="Digital/dandelion.png" style="width:100%" onclick="currentSlide(15)" alt="Finding Yourself Narrative">
+        <img class="demo cursor" src="Digital/wildLeaves.jpg" style="width:100%" onclick="currentSlide(19)" alt="Dandelion">
+        <video autoplay muted class="demo cursor" src="Videos/accordian.mp4" type="video/mp4" style="width:100%" onclick="currentSlides(23)" alt="Font Design Accordian Fold Book"></video>
+      </div>
+
+      <div class="column">
+        <img class="demo cursor" src="Digital/fishies.jpg" style="width:100%" onclick="currentSlide(4)" alt="Flower">
+        <img class="demo cursor" src="Digital/sunTat.jpg" style="width:100%" onclick="currentSlide(8)" alt="Music Tattoo Design">
+        <img class="demo cursor" src="Digital/milkyway.jpg" style="width:100%" onclick="currentSlide(12)" alt="Tree Stump">
+        <img class="demo cursor" src="Digital/alienflower.jpg" style="width:100%" onclick="currentSlide(16)" alt="Wild Leaves">
+        <img class="demo cursor" src="Digital/harrypotter.jpg" style="width:100%" onclick="currentSlide(20)" alt="Harry Potter Tattoo Design">
+<<<<<<< HEAD
+        <video controls autoplay muted class="demo cursor" src="Videos/wateronmars.mp4" type="video/mp4" style="width:100%" onclick="currentSlides(24)" alt="Water on Mars Wikipedia Book Design"></video>
+=======
+        <video autoplay muted class="demo cursor" src="Videos/wateronmars.mp4" type="video/mp4" style="width:100%" onclick="currentSlides(24)" alt="Water on Mars Wikipedia Book Design"></video>
+>>>>>>> parent of 98458e2... vids
+      </div>
+    </div>
+  </div>
+  </body>
+</html>

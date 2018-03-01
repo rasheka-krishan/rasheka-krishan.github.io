@@ -1,0 +1,148 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+      <meta charset="utf-8">
+      <meta name="description" content="A page for exploring basic HTML documents">
+      <title>Portfolio Site</title>
+      <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" type="text/css" href="styles.css">
+      <script src="myscript.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+      <script>
+          window.onload = function() {setTimeout(function(){document.body.style.opacity="100";},500);};
+      </script>
+  </head>
+  
+  <body>
+  
+  <style> body{opacity:0;} </style>
+
+  <!-- <div class = "topSection">
+    <h4 style="float: right;"> <a href="index.html">Home</a> </h4>
+    <h4 style="float: left;"> <a href="portfolio.html">Back</a> </h4>
+  </div> -->
+
+  <div class="dropdown">
+    <button onclick="myFunction()" class="dropbtn">Menu</button>
+      <div id="myDropdown" class="dropdown-content">
+        <a class="menu-links" href="portfolio.html">Back</a>
+        <a class="menu-links" href="index.html">Home</a>
+        <a class="menu-links" href="about.html">About</a>
+        <a class="menu-links" href="digital.html">Digital</a>
+        <a class="menu-links" href="drawing.html">Drawing</a>
+        <a class="menu-links" href="painting.html">Painting</a>
+        <a class="menu-links" href="photography.html">Photography</a>
+      </div>
+  </div>
+
+  <div class ="social">
+    <a href="https://www.instagram.com/rashikashi/" class="fa fa-instagram"></a>
+    <a href="https://www.pinterest.com/rashikashi/" class="fa fa-pinterest"></a>
+  </div>
+
+  <h3> Painting </h3>
+
+    <div class="row">
+        <div class="column">
+          <img src="Painting/supernova.jpeg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+          <img src="Painting/indianVillage.jpg" style="width:100%" onclick="openModal();currentSlide(5)" class="hover-shadow cursor">
+        </div>
+
+        <div class="column">
+          <img src="Painting/pixelMan1.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+          <img src="Painting/moon.jpg" style="width:100%" onclick="openModal();currentSlide(6)" class="hover-shadow cursor">
+        </div>
+
+        <div class="column">
+          <img src="Painting/cherryTree.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+          <img src="Painting/cherryTreeGlow.jpg" style="width:100%" onclick="openModal();currentSlide(7)" class="hover-shadow cursor">
+        </div>
+
+        <div class="column">
+          <img src="Painting/magic.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+          <img src="Painting/gradCap.jpg" style="width:100%" onclick="openModal();currentSlide(8)" class="hover-shadow cursor">
+        </div>
+
+    </div>
+
+      <div id="myModal" class="modal">
+        <span class="close cursor" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+
+          <div class="mySlides">
+            <div class="numbertext">1 / 8</div>
+            <img src="Painting/supernova.jpeg" style="width:100%">
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">2 / 8</div>
+            <img src="Painting/pixelMan1.jpg" style="width:100%">
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">3 / 8</div>
+            <img src="Painting/cherryTree.jpg" style="width:100%">
+          </div>
+          
+          <div class="mySlides">
+            <div class="numbertext">4 / 8</div>
+            <img src="Painting/magic.jpg" style="width:100%">
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">5 / 8</div>
+            <img src="Painting/indianVillage.jpg" style="width:100%">
+          </div>
+
+           <div class="mySlides">
+            <div class="numbertext">6 / 8</div>
+            <img src="Painting/moon.jpg" style="width:100%">
+          </div>
+
+           <div class="mySlides">
+            <div class="numbertext">7 / 8</div>
+            <img src="Painting/cherryTreeGlow.jpg" style="width:100%">
+          </div>
+
+           <div class="mySlides">
+            <div class="numbertext">8 / 8</div>
+            <img src="Painting/gradCap.jpg" style="width:100%">
+          </div>
+
+
+           
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+          <div class="caption-container">
+            <p id="caption"></p>
+          </div>
+
+
+          <div class="column">
+            <img class="demo cursor" src="Painting/supernova.jpeg" style="width:100%" onclick="currentSlide(1)" alt="Supernova">
+            <img class="demo cursor" src="Painting/indianVillage.jpg" style="width:100%" onclick="currentSlide(5)" alt="Pixelized Man">
+          </div>
+
+
+          <div class="column">
+            <img class="demo cursor" src="Painting/pixelMan1.jpg" style="width:100%" onclick="currentSlide(2)" alt="Cherry Blossom Tree">
+            <img class="demo cursor" src="Painting/moon.jpg" style="width:100%" onclick="currentSlide(6)" alt="Words are Magical">
+          </div>
+
+
+          <div class="column">
+            <img class="demo cursor" src="Painting/cherryTree.jpg" style="width:100%" onclick="currentSlide(3)" alt="Indian Village">
+            <img class="demo cursor" src="Painting/cherryTreeGlow.jpg" style="width:100%" onclick="currentSlide(7)" alt="Moon">
+          </div>
+
+
+          <div class="column">
+            <img class="demo cursor" src="Painting/magic.jpg" style="width:100%" onclick="currentSlide(4)" alt="Cherry Blossom Glowing">
+            <img class="demo cursor" src="Painting/gradCap.jpg" style="width:100%" onclick="currentSlide(8)" alt="Graduation Cap">
+          </div>
+      </div>
+  </body>
+<!DOCTYPE html>
+</html>

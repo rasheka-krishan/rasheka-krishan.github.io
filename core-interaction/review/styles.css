@@ -1,0 +1,30 @@
+body{
+  background-color: lightgreen;
+  font-size: 30px;
+}
+
+h1{
+  text-align: center;
+  border: 4px dotted black;
+}
+
+a{
+  text-decoration-skip ink: none;
+}
+
+img{
+  width:auto;
+  height:auto;
+}
+
+#good {
+  background-color: blue;
+}
+
+#evil {
+  background-color: red;
+}
+
+.sa {
+  background-color: white;
+}

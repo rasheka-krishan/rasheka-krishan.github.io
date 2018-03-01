@@ -1,0 +1,237 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+      <meta charset="utf-8">
+      <meta name="description" content="A page for exploring basic HTML documents">
+      <title>Portfolio Site</title>
+      <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" type="text/css" href="styles.css">
+      <script src="myscript.js"></script>
+      <script>
+          window.onload = function() {setTimeout(function(){document.body.style.opacity="100";},500);};
+      </script>
+  </head>
+  
+  <body>
+  
+  <style> body{opacity:0;} </style>
+
+   <div class="dropdown">
+    <button onclick="myFunction()" class="dropbtn">Menu</button>
+      <div id="myDropdown" class="dropdown-content">
+        <a class="menu-links" href="portfolio.html">Back</a>
+        <a class="menu-links" href="index.html">Home</a>
+        <a class="menu-links" href="about.html">About</a>
+        <a class="menu-links" href="digital.html">Digital</a>
+        <a class="menu-links" href="drawing.html">Drawing</a>
+        <a class="menu-links" href="painting.html">Painting</a>
+        <a class="menu-links" href="photography.html">Photography</a>
+      </div>
+  </div>
+
+  <div class ="social">
+    <a href="https://www.instagram.com/rashikashi/" class="fa fa-instagram"></a>
+    <a href="https://www.pinterest.com/rashikashi/" class="fa fa-pinterest"></a>
+  </div>
+
+  <h3> Photography </h3>
+
+  <div class="row">
+    <div class="column">
+      <img src="Photography/DSC_0014.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+      <img src="Photography/DSC_0085.jpg" style="width:100%" onclick="openModal();currentSlide(5)" class="hover-shadow cursor">
+      <img src="Photography/DSC_0155.jpg" style="width:100%" onclick="openModal();currentSlide(9)" class="hover-shadow cursor">
+      <img src="Photography/DSC_0173.jpg" style="width:100%" onclick="openModal();currentSlide(13)" class="hover-shadow cursor">
+      <img src="Photography/DSC_0261.jpg" style="width:100%" onclick="openModal();currentSlide(17)" class="hover-shadow cursor">
+      <img src="Photography/Krishan_Rasheka_05.jpg" style="width:100%" onclick="openModal();currentSlide(20)" class="hover-shadow cursor">
+    </div>
+
+    <div class="column">
+      <img src="Photography/DSC_0317.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+      <img src="Photography/DSC_0362.jpg" style="width:100%" onclick="openModal();currentSlide(6)" class="hover-shadow cursor">
+      <img src="Photography/DSC_0411.jpg" style="width:100%" onclick="openModal();currentSlide(10)" class="hover-shadow cursor">
+      <img src="Photography/DSC_0418.jpg" style="width:100%" onclick="openModal();currentSlide(14)" class="hover-shadow cursor">
+      <img src="Photography/DSC_0445.jpg"style="width:100%" onclick="openModal();currentSlide(18)" class="hover-shadow cursor">
+      <img src="Photography/Krishan_Rasheka_04.jpg" style="width:100%" onclick="openModal();currentSlide(21)" class="hover-shadow cursor">
+    </div>
+
+    <div class="column">
+      <img src="Photography/DSC_0458.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+      <img src="Photography/DSC_0465.jpg" style="width:100%" onclick="openModal();currentSlide(7)" class="hover-shadow cursor">
+      <img src="Photography/DSC_0494.jpg" style="width:100%" onclick="openModal();currentSlide(11)" class="hover-shadow cursor">
+      <img src="Photography/DSC_2536.jpg" style="width:100%" onclick="openModal();currentSlide(15)" class="hover-shadow cursor">
+      <img src="Photography/DSC_8584.jpg"style="width:100%" onclick="openModal();currentSlide(19)" class="hover-shadow cursor">
+      <img src="Photography/DSC_9835.jpg" style="width:100%" onclick="openModal();currentSlide(22)" class="hover-shadow cursor">
+    </div>
+
+    <div class="column">
+      <img src="Photography/DSC_9065.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+      <img src="Photography/DSC_9331.jpg" style="width:100%" onclick="openModal();currentSlide(8)" class="hover-shadow cursor">
+      <img src="Photography/DSC_9378.jpg" style="width:100%" onclick="openModal();currentSlide(12)" class="hover-shadow cursor">
+      <img src="Photography/DSC_9639.jpg" style="width:100%" onclick="openModal();currentSlide(16)" class="hover-shadow cursor">
+    </div>
+
+  </div>
+
+  <div id="myModal" class="modal">
+    <span class="close cursor" onclick="closeModal()">&times;</span>
+    <div class="modal-content">
+
+      <div class="mySlides">
+        <div class="numbertext">1 / 22</div>
+        <img src="Photography/DSC_0014.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">2 / 22</div>
+        <img src="Photography/DSC_0317.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">3 / 22</div>
+        <img src="Photography/DSC_0458.jpg" style="width:100%">
+      </div>
+      
+      <div class="mySlides">
+        <div class="numbertext">4 / 22</div>
+        <img src="Photography/DSC_9065.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">5 / 22</div>
+        <img src="Photography/DSC_0085.jpg" style="width:100%">
+      </div>
+
+       <div class="mySlides">
+        <div class="numbertext">6 / 22</div>
+        <img src="Photography/DSC_0362.jpg" style="width:100%">
+      </div>
+
+       <div class="mySlides">
+        <div class="numbertext">7 / 22</div>
+        <img src="Photography/DSC_0465.jpg" style="width:100%">
+      </div>
+
+       <div class="mySlides">
+        <div class="numbertext">8 / 22</div>
+        <img src="Photography/DSC_9331.jpg" style="width:100%">
+      </div>
+
+       <div class="mySlides">
+        <div class="numbertext">9 / 22</div>
+        <img src="Photography/DSC_0155.jpg" style="width:100%">
+      </div>
+
+       <div class="mySlides">
+        <div class="numbertext">10 / 22</div>
+        <img src="Photography/DSC_0411.jpg" style="width:100%">
+      </div>
+
+       <div class="mySlides">
+        <div class="numbertext">11 / 22</div>
+        <img src="Photography/DSC_0494.jpg" style="width:100%">
+      </div>
+
+       <div class="mySlides">
+        <div class="numbertext">12 / 22</div>
+        <img src="Photography/DSC_9378.jpg" style="width:100%">
+      </div>
+
+       <div class="mySlides">
+        <div class="numbertext">13 / 22</div>
+        <img src="Photography/DSC_0173.jpg" style="width:100%">
+      </div>
+
+       <div class="mySlides">
+        <div class="numbertext">14 / 22</div>
+        <img src="Photography/DSC_0418.jpg" style="width:100%">
+      </div>
+
+       <div class="mySlides">
+        <div class="numbertext">15 / 22</div>
+        <img src="Photography/DSC_2536.jpg" style="width:100%">
+      </div>
+
+       <div class="mySlides">
+        <div class="numbertext">16 / 22</div>
+        <img src="Photography/DSC_9639.jpg" style="width:100%">
+      </div>
+
+       <div class="mySlides">
+        <div class="numbertext">17 / 22</div>
+        <img src="Photography/DSC_0261.jpg" style="width:100%">
+      </div>
+
+       <div class="mySlides">
+        <div class="numbertext">18 / 22</div>
+        <img src="Photography/DSC_0445.jpg" style="width:100%">
+      </div>
+
+       <div class="mySlides">
+        <div class="numbertext">19 / 22</div>
+        <img src="Photography/DSC_8584.jpg" style="width:100%">
+      </div>
+
+       <div class="mySlides">
+        <div class="numbertext">20 / 22</div>
+        <img src="Photography/Krishan_Rasheka_05.jpg" style="width:100%">
+      </div>
+
+       <div class="mySlides">
+        <div class="numbertext">21 / 22</div>
+        <img src="Photography/Krishan_Rasheka_04.jpg" style="width:100%">
+      </div>
+
+       <div class="mySlides">
+        <div class="numbertext">22 / 22</div>
+        <img src="Photography/DSC_9835.jpg" style="width:100%">
+      </div>
+
+      
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+      <div class="caption-container">
+        <p id="caption"></p>
+      </div>
+
+
+      <div class="column">
+        <img class="demo cursor" src="Photography/DSC_0014.jpg" style="width:100%" onclick="currentSlide(1)" alt="Grand Canyon">
+        <img class="demo cursor" src="Photography/DSC_0085.jpg" style="width:100%" onclick="currentSlide(5)" alt="Flower">
+        <img class="demo cursor" src="Photography/DSC_0155.jpg" style="width:100%" onclick="currentSlide(9)" alt="Lakeside Sunset">
+        <img class="demo cursor" src="Photography/DSC_0173.jpg" style="width:100%" onclick="currentSlide(13)" alt="Acadia, Maine">
+        <img class="demo cursor" src="Photography/DSC_0261.jpg" style="width:100%" onclick="currentSlide(17)" alt="Airplane">
+        <img class="demo cursor" src="Photography/Krishan_Rasheka_05.jpg" style="width:100%" onclick="currentSlide(20)" alt="Mountain Sunset">
+      </div>
+
+      <div class="column">
+        <img class="demo cursor" src="Photography/DSC_0317.jpg" style="width:100%" onclick="currentSlide(2)" alt="Grand Canyon">
+        <img class="demo cursor" src="Photography/DSC_0362.jpg" style="width:100%" onclick="currentSlide(6)" alt="Fallen Tree">
+        <img class="demo cursor" src="Photography/DSC_0411.jpg" style="width:100%" onclick="currentSlide(10)" alt="River Fractals">
+        <img class="demo cursor" src="Photography/DSC_0418.jpg" style="width:100%" onclick="currentSlide(14)" alt="Flowers">
+        <img class="demo cursor" src="Photography/DSC_0445.jpg" style="width:100%" onclick="currentSlide(18)" alt="Grand Canyon Lighting">
+        <img class="demo cursor" src="Photography/Krishan_Rasheka_04.jpg" style="width:100%" onclick="currentSlide(21)" alt="Portrait">
+      </div>
+
+      <div class="column">
+        <img class="demo cursor" src="Photography/DSC_0458.jpg" style="width:100%" onclick="currentSlide(3)" alt="Narnia">
+        <img class="demo cursor" src="Photography/DSC_0465.jpg" style="width:100%" onclick="currentSlide(7)" alt="Flower">
+        <img class="demo cursor" src="Photography/DSC_0494.jpg" style="width:100%" onclick="currentSlide(11)" alt="Fall Mountains">
+        <img class="demo cursor" src="Photography/DSC_2536.jpg" style="width:100%" onclick="currentSlide(15)" alt="Mount Washington">
+        <img class="demo cursor" src="Photography/DSC_8584.jpg" style="width:100%" onclick="currentSlide(19)" alt="Lakeside Park">
+        <img class="demo cursor" src="Photography/DSC_9835.jpg" style="width:100%" onclick="currentSlide(22)" alt="Bee">
+      </div>
+
+      <div class="column">
+        <img class="demo cursor" src="Photography/DSC_9065.jpg" style="width:100%" onclick="currentSlide(4)" alt="Urban Seagull">
+        <img class="demo cursor" src="Photography/DSC_9331.jpg" style="width:100%" onclick="currentSlide(8)" alt="Mysterious Canoeing">
+        <img class="demo cursor" src="Photography/DSC_9378.jpg" style="width:100%" onclick="currentSlide(12)" alt="Lakeside Sunset">
+        <img class="demo cursor" src="Photography/DSC_9639.jpg" style="width:100%" onclick="currentSlide(16)" alt="7/4/14">
+      </div>
+    </div>
+  </div>
+  </body>
+<!DOCTYPE html>
+</html>

@@ -1,0 +1,181 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+      <meta charset="utf-8">
+      <meta name="description" content="A page for exploring basic HTML documents">
+      <title>Portfolio Site</title>
+      <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" type="text/css" href="styles.css">
+      <script src="myscript.js"></script>
+      <script>
+          window.onload = function() {setTimeout(function(){document.body.style.opacity="100";},500);};
+      </script>
+  </head>
+
+  <body>
+
+  <style> body{opacity:0;} </style>
+
+   <div class="dropdown">
+    <button onclick="myFunction()" class="dropbtn">Menu</button>
+      <div id="myDropdown" class="dropdown-content">
+        <a class="menu-links" href="portfolio.html">Back</a>
+        <a class="menu-links" href="index.html">Home</a>
+        <a class="menu-links" href="about.html">About</a>
+        <a class="menu-links" href="digital.html">Digital</a>
+        <a class="menu-links" href="drawing.html">Drawing</a>
+        <a class="menu-links" href="painting.html">Painting</a>
+        <a class="menu-links" href="photography.html">Photography</a>
+      </div>
+  </div>
+
+  <div class ="social">
+    <a href="https://www.instagram.com/rashikashi/" class="fa fa-instagram"></a>
+    <a href="https://www.pinterest.com/rashikashi/" class="fa fa-pinterest"></a>
+  </div>
+
+  <h3> Drawing </h3>
+
+  <div class="row">
+    <div class="column">
+      <img src="Graphite/anoushka.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+      <img src="Graphite/lips.jpg" style="width:100%" onclick="openModal();currentSlide(5)" class="hover-shadow cursor">
+      <img src="Graphite/dragon2.jpg" style="width:100%" onclick="openModal();currentSlide(9)" class="hover-shadow cursor">
+      <img src="Graphite/seaDragon.jpg" style="width:100%" onclick="openModal();currentSlide(13)" class="hover-shadow cursor">
+    </div>
+
+    <div class="column">
+      <img src="Graphite/charcoal.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+      <img src="Graphite/minotaur.jpg" style="width:100%" onclick="openModal();currentSlide(6)" class="hover-shadow cursor">
+      <img src="Graphite/cyclops.jpg" style="width:100%" onclick="openModal();currentSlide(10)" class="hover-shadow cursor">
+      <img src="Graphite/dragon.jpg" style="width:100%" onclick="openModal();currentSlide(14)" class="hover-shadow cursor">
+    </div>
+
+    <div class="column">
+      <img src="Graphite/planets.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+      <img src="Graphite/angel.jpg" style="width:100%" onclick="openModal();currentSlide(7)" class="hover-shadow cursor">
+      <img src="Graphite/rose.jpg" style="width:100%" onclick="openModal();currentSlide(11)" class="hover-shadow cursor">
+    </div>
+
+    <div class="column">
+      <img src="Graphite/bird.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+      <img src="Graphite/arya.jpg" style="width:100%" onclick="openModal();currentSlide(8)" class="hover-shadow cursor">
+      <img src="Graphite/satyr.jpg" style="width:100%" onclick="openModal();currentSlide(12)" class="hover-shadow cursor">
+    </div>
+
+  </div>
+
+  <div id="myModal" class="modal">
+    <span class="close cursor" onclick="closeModal()">&times;</span>
+    <div class="modal-content">
+
+      <div class="mySlides">
+        <div class="numbertext">1 / 14</div>
+        <img src="Graphite/anoushka.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">2 / 14</div>
+        <img src="Graphite/charcoal.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">3 / 14</div>
+        <img src="Graphite/planets.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">4 / 14</div>
+        <img src="Graphite/bird.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">5 / 14</div>
+        <img src="Graphite/lips.jpg" style="width:100%">
+      </div>
+
+       <div class="mySlides">
+        <div class="numbertext">6 / 14</div>
+        <img src="Graphite/minotaur.jpg" style="width:100%">
+      </div>
+
+       <div class="mySlides">
+        <div class="numbertext">7 / 14</div>
+        <img src="Graphite/angel.jpg" style="width:100%">
+      </div>
+
+       <div class="mySlides">
+        <div class="numbertext">8 / 14</div>
+        <img src="Graphite/arya.jpg" style="width:100%">
+      </div>
+
+       <div class="mySlides">
+        <div class="numbertext">9 / 14</div>
+        <img src="Graphite/dragon2.jpg" style="width:100%">
+      </div>
+
+       <div class="mySlides">
+        <div class="numbertext">10 / 14</div>
+        <img src="Graphite/cyclops.jpg" style="width:100%">
+      </div>
+
+       <div class="mySlides">
+        <div class="numbertext">11 / 14</div>
+        <img src="Graphite/rose.jpg" style="width:100%">
+      </div>
+
+       <div class="mySlides">
+        <div class="numbertext">12 / 14</div>
+        <img src="Graphite/satyr.jpg" style="width:100%">
+      </div>
+
+       <div class="mySlides">
+        <div class="numbertext">13 / 14</div>
+        <img src="Graphite/seaDragon.jpg" style="width:100%">
+      </div>
+
+       <div class="mySlides">
+        <div class="numbertext">14 / 14</div>
+        <img src="Graphite/dragon.jpg" style="width:100%">
+      </div>
+
+
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+      <div class="caption-container">
+        <p id="caption"></p>
+      </div>
+
+
+      <div class="column">
+        <img class="demo cursor" src="Graphite/anoushka.jpg" style="width:100%" onclick="currentSlide(1)" alt="Baby Niece (graphite)">
+        <img class="demo cursor" src="Graphite/lips.jpg" style="width:100%" onclick="currentSlide(5)" alt="Nude Man (charcoal)">
+        <img class="demo cursor" src="Graphite/dragon2.jpg" style="width:100%" onclick="currentSlide(9)" alt="Planets">
+        <img class="demo cursor" src="Graphite/seaDragon.jpg" style="width:100%" onclick="currentSlide(13)" alt="Bird (colored pencil)">
+      </div>
+
+      <div class="column">
+        <img class="demo cursor" src="Graphite/charcoal.jpg" style="width:100%" onclick="currentSlide(2)" alt="Lips (graphite)">
+        <img class="demo cursor" src="Graphite/minotaur.jpg" style="width:100%" onclick="currentSlide(6)" alt="Minotaur (eyeliner)">
+        <img class="demo cursor" src="Graphite/cyclops.jpg" style="width:100%" onclick="currentSlide(10)" alt="Angel (eyeliner)">
+        <img class="demo cursor" src="graphite/dragon.jpg" style="width:100%" onclick="currentSlide(14)" alt="Baby Nephew (graphite)">
+      </div>
+
+      <div class="column">
+        <img class="demo cursor" src="Graphite/planets.jpg" style="width:100%" onclick="currentSlide(3)" alt="Dragon (graphite)">
+        <img class="demo cursor" src="Graphite/angel.jpg" style="width:100%" onclick="currentSlide(7)" alt="Cyclops (eyeliner)">
+        <img class="demo cursor" src="Graphite/rose.jpg" style="width:100%" onclick="currentSlide(11)" alt="Rose (Pen)">
+      </div>
+
+      <div class="column">
+        <img class="demo cursor" src="Graphite/bird.jpg" style="width:100%" onclick="currentSlide(4)" alt="Satyr (eyeliner)">
+        <img class="demo cursor" src="Graphite/arya.jpg" style="width:100%" onclick="currentSlide(8)" alt="Sea Dragon (eyeliner)">
+        <img class="demo cursor" src="Graphite/satyr.jpg" style="width:100%" onclick="currentSlide(12)" alt="Dragon (eyeliner)">
+      </div>
+    </div>
+  </div>
+  </body>
+<!DOCTYPE html>
+</html>

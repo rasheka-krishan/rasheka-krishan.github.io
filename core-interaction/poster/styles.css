@@ -1,0 +1,75 @@
+body{
+  background-color: #465555;
+}
+
+h1{
+  font-family: 'Archivo Black', sans-serif;
+  font-size: 350px;
+  color: #FF6A80;
+  padding: 0px;
+  margin: 0px;
+}
+
+.numbers{
+  position: relative;
+  z-index: 1;
+}
+
+.writing{
+  position: absolute;
+  z-index: 2;
+  padding-top: 25%;
+  background-color: white;
+  width: 55%;
+  height: 44%;
+  margin-left: 12.5%;
+  margin-right: 12.5%;
+  padding: 120px;
+  -ms-transform: rotate(-5deg); /* IE 9 */
+  -webkit-transform: rotate(-5deg); /* Safari */
+  transform: rotate(-5deg); /* Standard syntax */
+}
+
+p{
+  font-family: 'Rokkitt', serif;
+  font-size: 45px;
+}
+
+.indent{
+  text-indent: 100px;
+}
+
+.signature{
+  text-indent: 450px;
+}
+
+.message{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  color: white;
+  text-align: center;
+  padding-top: 120px;
+}
+
+.brandName{
+  font-family: 'Teko', sans-serif;
+  font-size: 25px;
+}
+
+.letter{
+  font-family: 'Teko', sans-serif;
+  font-size: 40px;
+}
+
+.link{
+  text-align: center;
+}
+
+a{
+  font-size: 20px;
+  color: #FF6A80;
+}
+
+a.hover{
+  color: white;
+}

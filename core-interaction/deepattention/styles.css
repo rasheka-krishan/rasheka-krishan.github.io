@@ -1,0 +1,32 @@
+body{
+  font-family: 'Crimson Text', serif;
+  background-color: #b30000;
+  text-align: justify;
+  font-size: 17px;
+}
+
+h1{
+  text-align: center;
+}
+
+h3{
+  text-align: center;
+}
+
+div{
+  margin: auto;
+  width: 50%;
+  height: auto;
+}
+
+p{
+  text-indent: 25px;
+}
+
+p:hover{
+  color: #D3D3D3;
+}
+
+h1:hover{
+  font-size: 80px;
+}

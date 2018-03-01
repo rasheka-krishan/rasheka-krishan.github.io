@@ -1,0 +1,113 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  font-family: 'Zilla Slab', serif;
+}
+.menu{
+  margin-bottom: 40px;
+}
+
+.nav{
+  font-size: 30px;
+  color: #36569f;
+  display: inline-block;
+  padding-top: 20px;
+  padding-left: 7.5%;
+  padding-right: 7.5%;
+  text-decoration: none;
+}
+
+.nav:hover{
+  font-weight: bold;
+}
+
+#activenav{
+  font-weight: bold;
+}
+
+
+.container {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  width: 100%;
+  margin-left: 50%;
+  margin-right: 50%;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  margin-left: 50%;
+  margin-right: 50%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: lightblue;
+}
+
+.container:hover .overlay {
+  opacity: .8;
+}
+
+.text {
+  width:100%;
+  color: black;
+  font-size: 23px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: block;
+}
+
+.text span {
+  display: block;
+  padding: 2px;
+  text-align: center;
+}
+
+.name{
+  font-size: 60px;
+}
+
+#previous {
+    background-color: lightgray;
+    color: black;
+    margin-left: 47.3%;
+    margin-top: 10px;
+    border-radius: 50%;
+}
+
+#next {
+    background-color: lightgray;
+    color: black;
+    margin-top: 10px;
+    border-radius: 50%;
+}
+
+.round {
+    border-radius: 50%;
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 16px;
+}
+
+#previous:hover{
+  background-color: lightblue;
+  color: black;
+}
+#next:hover{
+  background-color: lightblue;
+  color: black;
+}

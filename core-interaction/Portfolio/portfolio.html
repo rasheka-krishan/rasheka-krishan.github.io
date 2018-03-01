@@ -1,0 +1,109 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="A page for exploring basic HTML documents">
+        <title>Portfolio Site</title>
+        <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+        <script src="myscript.js"></script>
+        <style>
+            html body{
+                font-family: 'Raleway', sans-serif;
+                background-image: url("Photography/DSC_9835.jpg");
+                background-size: 1150px 730px;
+                background-position: right;
+                /*background-color: black;*/
+            }
+
+            h2 {
+                margin: 0 !important;
+                display: inline block;
+                align-items: center;
+                justify-content: center;
+                float:center;
+                font-size: 40px;
+                text-align: center;
+                padding-top: 65px;
+                padding-bottom: 40px;
+                padding-right: 25px;
+                padding-left: 25px;
+            }
+
+            a {
+                display: inline-block;
+                color: white;
+                text-decoration: none;
+            }
+
+            a:hover {
+                color: #9999ff;
+                /*border: 2px dotted white;
+                border-radius: 5px;*/
+            }
+
+
+
+            .dropbtn {
+                background-color: black;
+                color: white;
+                padding: 10px;
+                font-size: 16px;
+                border: none;
+                cursor: pointer;
+            }
+
+            .dropbtn:hover, .dropbtn:focus {
+                background-color: #9999ff;
+            }
+
+            .dropdown {
+                position: relative;
+                display: inline-block;
+            }
+
+            .dropdown-content {
+                display: none;
+                position: absolute;
+                background-color: black;
+                min-width: 150px;
+                overflow: auto;
+                box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                z-index: 1;
+            }
+
+            .dropdown-content a {
+                color: white;
+                padding: 12px 16px;
+                text-decoration: none;
+                display: block;
+            }
+
+            .dropdown a:hover {background-color: #9999ff}
+
+
+            .show {display:block;}
+
+        </style>
+    </head>
+    <body>
+
+    <div class="dropdown">
+        <button onclick="myFunction()" class="dropbtn">Menu</button>
+          <div id="myDropdown" class="dropdown-content">
+            <a class="menu-links" href="portfolio.html">Back</a>
+            <a class="menu-links" href="index.html">Home</a>
+            <a class="menu-links" href="about.html">About</a>
+            <a class="menu-links" href="digital.html">Digital</a>
+            <a class="menu-links" href="drawing.html">Drawing</a>
+            <a class="menu-links" href="painting.html">Painting</a>
+            <a class="menu-links" href="photography.html">Photography</a>
+          </div>
+    </div>
+
+        <h2> <a href="digital.html">Digital</a> </h2>
+        <h2> <a href="drawing.html">Drawing</a> </h2>
+        <h2> <a href="painting.html">Painting</a> </h2>
+        <h2> <a href="photography.html">Photography</a> </h2>
+    </body>
+<!DOCTYPE html>
+</html>
