@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Emotional Type</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:800|Raleway:800" rel="stylesheet">
+</head>
+  <body>
+
+    <div class="row">
+
+      <div class="leftcolumn">
+        <div class="word">
+          <span id="firstletter">D</span>
+          <span id="secondletter">R</span>
+          <span id="thirdletter">A</span>
+          <span id="thirdtolastletter">G</span>
+          <span id="secondtolastletter">O</span>
+          <span id="lastletter">N</span>
+        </div>
+      </div>
+
+      <div class="rightcolumn">
+        <div class="emojis">
+          <!-- onclick="changeText(this)" -->
+          <button id="excitedemoji" onclick="excitedFunction()"><img src="emojis/excited.png"></button>
+          <button id="sademoji" onclick="sadFunction()"><img src="emojis/sad.png"></button>
+          <button id="angryemoji" onclick="angryFunction()"><img src="emojis/angry.png"></button>
+          <button id="loveemoji" onclick="loveFunction()"><img src="emojis/love.png"></button>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="footer">
+      <form action="index.html" target="emotionpage.html" method="get">
+        <input class="textbox" type="text" word="anyword" value="Avacado">
+        <input class="submit" type="submit" value="Submit">
+      </form>
+    </div>
+    <script src="script.js">
+    </script>
+  </body>
+</html>

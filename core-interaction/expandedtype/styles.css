@@ -1,0 +1,207 @@
+* {
+    box-sizing: border-box;
+}
+
+/* Add a gray background color with some padding */
+body {
+    /* margin:0; */
+    width:97.3%;
+    height: 100%;
+    align-items: center;
+}
+
+/* Word column */
+.leftcolumn {
+    float: left;
+    width: 95%;
+    height: 100%;
+}
+
+/* Emoji column */
+.rightcolumn {
+    float: left;
+    width: 5%;
+    height: 100%;
+    margin-top: 10%;
+    position: relative;
+}
+
+img {
+    width:100px;
+    height: 100px;
+    padding: 20px;
+}
+
+.word {
+     margin-top: 15%;
+     font-weight: bold;
+     font-size: 70px;
+     text-align: center;
+     font-family: 'Montserrat', sans-serif;
+
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.footer {
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    /* margin-left: 90%;
+    margin-bottom: 2%; */
+    float: right;
+    /* font-family: 'Raleway', sans-serif; */
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+    .leftcolumn, .rightcolumn {
+        width: 100%;
+        padding: 0;
+    }
+}
+
+button{
+  border: none;
+  background-color: inherit;
+}
+button:hover{
+  cursor: pointer;
+  border: none;
+}
+
+img:hover{
+  width:115px;
+  height:115px;
+}
+
+
+.excitedfirstletter{
+  animation-name: excitedfirstletter;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+@keyframes excitedfirstletter {
+  0%   {font-size: 70px;}
+  100% {font-size: 400px;}
+}
+
+.excitedsecondletter{
+  animation-name: excitedsecondletter;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+@keyframes excitedsecondletter {
+  0%   {font-size: 70px;}
+  100% {font-size: 400px;}
+}
+
+.excitedthirdletter{
+  animation-name: excitedthirdletter;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+@keyframes excitedthirdletter {
+  0%   {font-size: 70px;}
+  100% {font-size: 300px;}
+}
+/* .sadsecondletter{
+  animation-name: sadsecondletter;
+  animation-duration: 4s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+}
+@keyframes sadsecondletter {
+  0%   {font-size: 70px;}
+  100% {font-size: 60px;}
+}
+
+.sadthirdletter{
+  animation-name: sadthirdletter;
+  animation-duration: 3.5s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+}
+@keyframes sadthirdletter {
+  0%   {font-size: 70px;}
+  100% {font-size: 55px;}
+} */
+
+.sadthirdtolastletter{
+  animation-name: sadthirdtolastletter;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
+@keyframes sadthirdtolastletter {
+  0%   {font-size: 70px;}
+  100% {font-size: 50px;}
+}
+
+.sadsecondtolastletter{
+  animation-name: sadsecondtolastletter;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+@keyframes sadsecondtolastletter {
+  0%   {font-size: 70px;}
+  100% {font-size: 40px;}
+}
+
+.sadlastletter{
+   animation-name: sadlastletter;
+   animation-duration: 1s;
+   animation-fill-mode: forwards;
+}
+@keyframes sadlastletter {
+    0%   {font-size: 70px; top:0px;}
+    25%  {top: 100px;}
+    50%  {top: 200px;}
+    75%  {top: 300px;}
+    100% {font-size: 20px; top: 400px; transform: rotateZ(25deg);}
+}
+
+.angryfirstletter, .angrysecondletter, .angrythirdletter, .angrythirdtolastletter, .angrysecondtolastletter, .angrylastletter{
+  animation-name: angryletters;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+@keyframes angryletters{
+  0% {font-size: 70px;}
+  50% {font-size: 275px;}
+  100% {font-size: 30px;}
+}
+
+.lovefirstletter, .lovethirdletter, .lovesecondtolastletter{
+  animation-name: up;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+@keyframes up{
+  0% {font-size: 70px;}
+  100% {}
+}
+
+.lovesecondletter, .lovethirdtolastletter, .lovelastletter{
+  animation-name: down;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+@keyframes down{
+  0% {font-size: 70px;}
+  100% {font-size: 30px;}
+}
+
+.textbox{
+  width: 90rem;
+  height: 3rem;
+}
+.submit{
+  width: 8.5rem;
+  height: 3rem;
+}
