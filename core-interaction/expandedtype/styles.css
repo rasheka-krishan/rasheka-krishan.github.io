@@ -27,9 +27,10 @@ body {
 }
 
 img {
-    width:100px;
-    height: 100px;
-    padding: 20px;
+    width:80px;
+    height: 80px;
+    padding: 15px;
+    position: sticky;
 }
 
 .word {
@@ -49,21 +50,24 @@ img {
 }
 
 .footer {
-    text-align: center;
-    position: fixed;
-    bottom: 0;
-    /* margin-left: 90%;
-    margin-bottom: 2%; */
-    float: right;
-    /* font-family: 'Raleway', sans-serif; */
-    font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  margin-left: 85%;
+  /* margin-bottom: 2%; */
+  /* float: right; */
+  /* font-family: 'Raleway', sans-serif; */
+  font-family: 'Montserrat', sans-serif;
 }
 
 /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 800px) {
-    .leftcolumn, .rightcolumn {
-        width: 100%;
+    .leftcolumn, {
+        width: 95%;
         padding: 0;
+    }
+    .rightcolumn{
+      width: 5%;
     }
 }
 
@@ -77,45 +81,44 @@ button:hover{
 }
 
 img:hover{
-  width:115px;
-  height:115px;
+  width:105px;
+  height:105px;
 }
 
 
-.excitedfirstletter{
-  animation-name: excitedfirstletter;
+
+.excited{
+  animation-name: excited;
   animation-duration: 1s;
   animation-fill-mode: forwards;
-}
-@keyframes excitedfirstletter {
-  0%   {font-size: 70px;}
-  100% {font-size: 400px;}
+  text-transform: uppercase;
+  transition: all .2s ease-in-out;
 }
 
-.excitedsecondletter{
-  animation-name: excitedsecondletter;
-  animation-duration: 1s;
-  animation-fill-mode: forwards;
-}
-@keyframes excitedsecondletter {
-  0%   {font-size: 70px;}
-  100% {font-size: 400px;}
+@keyframes excited{
+  0%   {font-size: 70px; opacity: 0.2;}
+  50% {font-size: 275px; text-shadow: 8px 12px 12px rgba(51, 51, 51, 0.8);
+  color: rgba(255,255,255,0); opacity: 0.8; color: #ffff00;}
+  100% {font-size: 200px; color: #ffff00; opacity: 0.8;}
 }
 
-.excitedthirdletter{
-  animation-name: excitedthirdletter;
-  animation-duration: 1s;
-  animation-fill-mode: forwards;
-}
-@keyframes excitedthirdletter {
-  0%   {font-size: 70px;}
-  100% {font-size: 300px;}
-}
-/* .sadsecondletter{
+
+.sadfirstletter{
   animation-name: sadsecondletter;
-  animation-duration: 4s;
+  animation-duration: .2s;
   animation-fill-mode: forwards;
-  animation-timing-function: ease-in-out;
+  text-transform: uppercase;
+}
+@keyframes sadfirstletter {
+  0%   {font-size: 70px;}
+  100% {font-size: 70px;}
+}
+
+.sadsecondletter{
+  animation-name: sadsecondletter;
+  animation-duration: .2s;
+  animation-fill-mode: forwards;
+  text-transform: uppercase;
 }
 @keyframes sadsecondletter {
   0%   {font-size: 70px;}
@@ -124,14 +127,14 @@ img:hover{
 
 .sadthirdletter{
   animation-name: sadthirdletter;
-  animation-duration: 3.5s;
+  animation-duration: .2s;
   animation-fill-mode: forwards;
-  animation-timing-function: ease-in-out;
+  text-transform: uppercase;
 }
 @keyframes sadthirdletter {
   0%   {font-size: 70px;}
-  100% {font-size: 55px;}
-} */
+  100% {font-size: 50px;}
+}
 
 .sadthirdtolastletter{
   animation-name: sadthirdtolastletter;
@@ -140,7 +143,7 @@ img:hover{
 }
 @keyframes sadthirdtolastletter {
   0%   {font-size: 70px;}
-  100% {font-size: 50px;}
+  100% {font-size: 50px; color: #343e44;}
 }
 
 .sadsecondtolastletter{
@@ -150,7 +153,7 @@ img:hover{
 }
 @keyframes sadsecondtolastletter {
   0%   {font-size: 70px;}
-  100% {font-size: 40px;}
+  100% {font-size: 40px; color: #5c6c76;}
 }
 
 .sadlastletter{
@@ -159,43 +162,127 @@ img:hover{
    animation-fill-mode: forwards;
 }
 @keyframes sadlastletter {
-    0%   {font-size: 70px; top:0px;}
-    25%  {top: 100px;}
-    50%  {top: 200px;}
-    75%  {top: 300px;}
-    100% {font-size: 20px; top: 400px; transform: rotateZ(25deg);}
+    0%   {font-size: 70px;}
+    100% {font-size: 20px; color: #849baa;}
 }
 
-.angryfirstletter, .angrysecondletter, .angrythirdletter, .angrythirdtolastletter, .angrysecondtolastletter, .angrylastletter{
+
+
+.angry{
   animation-name: angryletters;
-  animation-duration: 1s;
+  animation-duration: .4s;
   animation-fill-mode: forwards;
+    /* &:hover {
+      -webkit-animation-name:              shake;
+      -webkit-animation-duration:          0.8s;
+      -webkit-animation-iteration-count:   infinite;
+      -webkit-animation-timing-function:   linear;
+      -webkit-transform-origin:            50% 100%;
+    } */
 }
 @keyframes angryletters{
   0% {font-size: 70px;}
-  50% {font-size: 275px;}
-  100% {font-size: 30px;}
+  50% {font-size: 275px; color: darkred; text-transform: uppercase; text-shadow: 10px 5px 10px darkred;}
+  100% { font-size: 275px; color: red; text-transform: uppercase; text-shadow: 10px 5px 10px red;}
 }
 
+/* @-webkit-keyframes shake {
+  0%  { -webkit-transform:     translate(2px, 1px) rotate(0deg); }
+  10% { -webkit-transform:     translate(-1px, -2px) rotate(-2deg); }
+  20% { -webkit-transform:     translate(-3px, 0px) rotate(3deg); }
+  30% { -webkit-transform:     translate(0px, 2px) rotate(0deg); }
+  40% { -webkit-transform:     translate(1px, -1px) rotate(1deg); }
+  50% { -webkit-transform:     translate(-1px, 2px) rotate(-1deg); }
+  60% { -webkit-transform:     translate(-3px, 1px) rotate(0deg); }
+  70% { -webkit-transform:     translate(2px, 1px) rotate(-2deg); }
+  80% { -webkit-transform:     translate(-1px, -1px) rotate(4deg); }
+  90% { -webkit-transform:     translate(2px, 2px) rotate(0deg); }
+  100%{ -webkit-transform:     translate(1px, -2px) rotate(-1deg); }
+ } */
+
+/* @keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+} */
+
+
+
 .lovefirstletter, .lovethirdletter, .lovesecondtolastletter{
-  animation-name: up;
-  animation-duration: 1s;
-  animation-fill-mode: forwards;
+  animation-name: up 3s linear infinite;
+  background: -webkit-linear-gradient(#c10037, #e20040, #ff4c4c);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 2px 2px 16px #e20040;
+  -webkit-animation: glow 3s linear infinite;
 }
+
 @keyframes up{
-  0% {font-size: 70px;}
-  100% {}
+  0% {text-shadow: 0px 0px 5px #e20040;
+}
+55% {
+  text-shadow: 0px 0px 15px #333, 0px 0px 5px gray;
+}
+60% {
+  text-shadow: 0px 0px 15px #222, 0px 0px 25px #6f6f6f;
+}
+75% {
+  text-shadow: 0px 0px 15px #e20040, 0px 0px 25px #ff7ca1;
+}
+  100% {text-shadow: 0px 0px 5px #e20040;}
+}
+
+@-webkit-keyframes glow {
+  0% {
+    text-shadow: 0px 0px 5px #e20040;
+  }
+  55% {
+    text-shadow: 0px 0px 5px #333, 0px 0px 5px gray;
+  }
+  60% {
+    text-shadow: 0px 0px 15px #222, 0px 0px 25px #6f6f6f;
+  }
+  75% {
+    text-shadow: 0px 0px 15px #e20040, 0px 0px 25px #ff7ca1;
+  }
+  100% {
+    text-shadow: 0px 0px 10px #e20040;
+  }
 }
 
 .lovesecondletter, .lovethirdtolastletter, .lovelastletter{
-  animation-name: down;
-  animation-duration: 1s;
-  animation-fill-mode: forwards;
+  animation-name: down 3s linear infinite;
+  background: -webkit-linear-gradient(#c10037, #e20040, #ff4c4c);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 2px 2px 16px #e20040;
+  -webkit-animation: glow 3s linear infinite;
 }
 @keyframes down{
-  0% {font-size: 70px;}
-  100% {font-size: 30px;}
+
+    0% {text-shadow: 0px 0px 5px #e20040;
+  }
+  55% {
+    text-shadow: 0px 0px 15px #333, 0px 0px 5px gray;
+  }
+  60% {
+    text-shadow: 0px 0px 15px #222, 0px 0px 25px #6f6f6f;
+  }
+  75% {
+    text-shadow: 0px 0px 15px #e20040, 0px 0px 25px #ff7ca1;
+  }
+    100% {text-shadow: 0px 0px 5px #FF5AB3;}
+  }
 }
+
 
 .textbox{
   width: 90rem;
