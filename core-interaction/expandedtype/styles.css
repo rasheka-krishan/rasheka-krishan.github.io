@@ -71,11 +71,11 @@ img {
     }
 }
 
-button{
+.emotionbutton{
   border: none;
   background-color: inherit;
 }
-button:hover{
+.emotionbutton:hover{
   cursor: pointer;
   border: none;
 }
@@ -83,6 +83,17 @@ button:hover{
 img:hover{
   width:105px;
   height:105px;
+}
+
+
+#submit{
+  width: 100px;
+  height: 30px;
+  border-style: solid, black;
+  border-width: 3px;
+  background-color: white;
+  cursor: pointer;
+  margin-top: 10px;
 }
 
 

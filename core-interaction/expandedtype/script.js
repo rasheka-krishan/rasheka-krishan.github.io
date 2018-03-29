@@ -1,3 +1,10 @@
+function userWord() {
+    var word = document.getElementById("myText").value;
+    var length = word.length;
+    document.getElementById("demo").innerHTML = word;
+}
+
+
 function sadFunction() {
   //remove
   var element = document.getElementById("firstletter");

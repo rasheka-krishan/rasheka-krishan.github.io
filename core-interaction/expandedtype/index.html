@@ -38,20 +38,20 @@
       <div class="rightcolumn">
         <div class="emojis">
           <!-- onclick="changeText(this)" -->
-          <button id="excitedemoji" onclick="excitedFunction()"><img src="emojis/excited.png"></button>
-          <button id="sademoji" onclick="sadFunction()"><img src="emojis/sad.png"></button>
-          <button id="angryemoji" onclick="angryFunction()"><img src="emojis/angry.png"></button>
-          <button id="loveemoji" onclick="loveFunction()"><img src="emojis/love.png"></button>
+          <button class ="emotionbutton" id="excitedemoji" onclick="excitedFunction()"><img src="emojis/excited.png"></button>
+          <button class ="emotionbutton" id="sademoji" onclick="sadFunction()"><img src="emojis/sad.png"></button>
+          <button class ="emotionbutton" id="angryemoji" onclick="angryFunction()"><img src="emojis/angry.png"></button>
+          <button class ="emotionbutton" id="loveemoji" onclick="loveFunction()"><img src="emojis/love.png"></button>
         </div>
       </div>
 
     </div>
 
+    <p id="demo"></p>
+
     <div class="footer">
-      <form action="index.html" target="emotionpage.html" method="get">
-        <input class="textbox" type="text" word="anyword" value="Avacado">
-        <input class="submit" type="submit" value="Submit">
-      </form>
+        <input type="text" id="myText" value="Enter word here...">
+        <button id = "submit" onclick="userWord()">Submit</button>
     </div>
     <script src="script.js">
     </script>
