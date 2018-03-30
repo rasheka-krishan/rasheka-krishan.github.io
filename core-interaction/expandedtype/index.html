@@ -1,63 +1,36 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" dir="ltr">
   <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Emotional Type</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:800|Raleway:800" rel="stylesheet">
-    <!-- love -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-      <link rel="tylesheet prefetch" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.1/animate.min.css">
+    <meta charset="utf-8">
+    <title>Emotions User Input</title>
+    <style>
+      body{
+        background-color: black;
+      }
 
-
-      <script type = "text/javascript"
-        src = "https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js">
-     </script>
-
-     <script type = "text/javascript"
-        src = "https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js">
-     </script>
-</head>
+      #input{
+        width: 50%;
+        height: 50px;
+        font-size: 30px;
+        display: block;
+        margin-top: 20%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    </style>
+  </head>
   <body>
 
-    <div class="row">
-
-      <div class="leftcolumn">
-        <div class="word">
-          <span id="firstletter">d</span>
-          <span id="secondletter">r</span>
-          <span id="thirdletter">a</span>
-          <span id="thirdtolastletter">g</span>
-          <span id="secondtolastletter">o</span>
-          <span id="lastletter">n</span>
-        </div>
-      </div>
-
-      <div class="rightcolumn">
-        <div class="emojis">
-          <!-- onclick="changeText(this)" -->
-          <button class ="emotionbutton" id="excitedemoji" onclick="excitedFunction()"><img src="emojis/excited.png"></button>
-          <button class ="emotionbutton" id="sademoji" onclick="sadFunction()"><img src="emojis/sad.png"></button>
-          <button class ="emotionbutton" id="angryemoji" onclick="angryFunction()"><img src="emojis/angry.png"></button>
-          <button class ="emotionbutton" id="loveemoji" onclick="loveFunction()"><img src="emojis/love.png"></button>
-        </div>
-      </div>
-
-    </div>
-
-    <p id="demo"></p>
-
-    <div class="footer">
-        <input type="text" id="myText" value="Enter word here...">
-        <button id = "submit" onclick="userWord()">Submit</button>
-    </div>
-    <script src="script.js">
+    <input type="text" id="input" onkeypress="myFunction()" value="Enter word with at least 4 letters...">
+    <script>
+    var input = document.getElementById("myInput");
+    input.addEventListener("keyup", function(event) {
+        event.preventDefault();
+        if (event.keyCode === 13) {
+          var url = "https://rasheka-krishan.github.io/core-interaction/expandedtype/emotions";
+          window.open(url, '_top');
+        }
+    });
     </script>
-    <!-- love -->
-    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.5/angular.min.js"></script>
   </body>
 </html>

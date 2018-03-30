@@ -33,7 +33,7 @@ img {
     position: sticky;
 }
 
-.word {
+#word {
      margin-top: 15%;
      font-weight: bold;
      font-size: 70px;
@@ -49,16 +49,15 @@ img {
     clear: both;
 }
 
-.footer {
+/* .footer {
   text-align: center;
   position: fixed;
   bottom: 0;
-  margin-left: 85%;
   /* margin-bottom: 2%; */
   /* float: right; */
   /* font-family: 'Raleway', sans-serif; */
   font-family: 'Montserrat', sans-serif;
-}
+} */
 
 /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 800px) {
@@ -85,15 +84,29 @@ img:hover{
   height:105px;
 }
 
+#input{
+  width: 96.5%;
+  height: 44px;
+  border-color: black;
+  border-width: 3px;
+  float: left;
+  position: fixed;
+  bottom: 0;
+}
 
 #submit{
-  width: 100px;
-  height: 30px;
-  border-style: solid, black;
+  border-style: solid;
+  border-color: black;
   border-width: 3px;
-  background-color: white;
+  border-radius: 4px;
+  background-color: lightgrey;
+  padding: 10px 24px;
+  display: inline-block;
+  font-size: 16px;
   cursor: pointer;
-  margin-top: 10px;
+  position: fixed;
+  bottom: 0;
+  margin-left: 93.5%;
 }
 
 
@@ -108,43 +121,9 @@ img:hover{
 
 @keyframes excited{
   0%   {font-size: 70px; opacity: 0.2;}
-  50% {font-size: 275px; text-shadow: 8px 12px 12px rgba(51, 51, 51, 0.8);
+  50% {font-size: 200px; text-shadow: 8px 12px 12px rgba(51, 51, 51, 0.8);
   color: rgba(255,255,255,0); opacity: 0.8; color: #ffff00;}
-  100% {font-size: 200px; color: #ffff00; opacity: 0.8;}
-}
-
-
-.sadfirstletter{
-  animation-name: sadsecondletter;
-  animation-duration: .2s;
-  animation-fill-mode: forwards;
-  text-transform: uppercase;
-}
-@keyframes sadfirstletter {
-  0%   {font-size: 70px;}
-  100% {font-size: 70px;}
-}
-
-.sadsecondletter{
-  animation-name: sadsecondletter;
-  animation-duration: .2s;
-  animation-fill-mode: forwards;
-  text-transform: uppercase;
-}
-@keyframes sadsecondletter {
-  0%   {font-size: 70px;}
-  100% {font-size: 60px;}
-}
-
-.sadthirdletter{
-  animation-name: sadthirdletter;
-  animation-duration: .2s;
-  animation-fill-mode: forwards;
-  text-transform: uppercase;
-}
-@keyframes sadthirdletter {
-  0%   {font-size: 70px;}
-  100% {font-size: 50px;}
+  100% {font-size: 150px; color: #ffff00; opacity: 0.8;}
 }
 
 .sadthirdtolastletter{
@@ -193,8 +172,8 @@ img:hover{
 }
 @keyframes angryletters{
   0% {font-size: 70px;}
-  50% {font-size: 275px; color: darkred; text-transform: uppercase; text-shadow: 10px 5px 10px darkred;}
-  100% { font-size: 275px; color: red; text-transform: uppercase; text-shadow: 10px 5px 10px red;}
+  50% {font-size: 200px; color: darkred; text-transform: uppercase; text-shadow: 10px 5px 10px darkred;}
+  100% { font-size: 200px; color: red; text-transform: uppercase; text-shadow: 10px 5px 10px red;}
 }
 
 /* @-webkit-keyframes shake {
@@ -227,7 +206,7 @@ img:hover{
 
 
 
-.lovefirstletter, .lovethirdletter, .lovesecondtolastletter{
+.loveletter{
   animation-name: up 3s linear infinite;
   background: -webkit-linear-gradient(#c10037, #e20040, #ff4c4c);
   -webkit-background-clip: text;
@@ -267,39 +246,4 @@ img:hover{
   100% {
     text-shadow: 0px 0px 10px #e20040;
   }
-}
-
-.lovesecondletter, .lovethirdtolastletter, .lovelastletter{
-  animation-name: down 3s linear infinite;
-  background: -webkit-linear-gradient(#c10037, #e20040, #ff4c4c);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  text-shadow: 2px 2px 16px #e20040;
-  -webkit-animation: glow 3s linear infinite;
-}
-@keyframes down{
-
-    0% {text-shadow: 0px 0px 5px #e20040;
-  }
-  55% {
-    text-shadow: 0px 0px 15px #333, 0px 0px 5px gray;
-  }
-  60% {
-    text-shadow: 0px 0px 15px #222, 0px 0px 25px #6f6f6f;
-  }
-  75% {
-    text-shadow: 0px 0px 15px #e20040, 0px 0px 25px #ff7ca1;
-  }
-    100% {text-shadow: 0px 0px 5px #FF5AB3;}
-  }
-}
-
-
-.textbox{
-  width: 90rem;
-  height: 3rem;
-}
-.submit{
-  width: 8.5rem;
-  height: 3rem;
 }
