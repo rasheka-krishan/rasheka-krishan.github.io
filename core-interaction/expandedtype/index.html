@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Emotions User Input</title>
+    <title>Emotions</title>
     <style>
       body{
         background-color: black;
@@ -17,20 +17,30 @@
         margin-left: auto;
         margin-right: auto;
       }
+
+      #submit{
+        display:none;
+      }
     </style>
   </head>
   <body>
 
-    <input type="text" id="input" onkeypress="myFunction()" value="Enter word with at least 4 letters...">
+    <input type="text" id="input" onkeypress="myFunction()" placeholder="Enter word with at least 4 letters...">
+    <button id="submit" onclick="userWord()">Submit</button>
     <script>
-    var input = document.getElementById("myInput");
-    input.addEventListener("keyup", function(event) {
-        event.preventDefault();
-        if (event.keyCode === 13) {
-          var url = "https://rasheka-krishan.github.io/core-interaction/expandedtype/emotions";
-          window.open(url, '_top');
-        }
-    });
+      var input = document.getElementById("input");
+      input.addEventListener("keyup", function(event)
+      {
+          event.preventDefault();
+          if (event.keyCode === 13)
+          {
+              document.getElementById("submit").click();
+          }
+      });
+
+      function userWord() {
+        window.open("https://rasheka-krishan.github.io/core-interaction/expandedtype/emotions");
+      }
     </script>
   </body>
 </html>
