@@ -9,6 +9,7 @@ function userWord() {
 
 
 function sadFunction() {
+  
   //remove
   var element = document.getElementById("word");
   element.classList.remove("angry");
@@ -33,8 +34,8 @@ function sadFunction() {
 }
 
 function excitedFunction() {
-  //remove
 
+  //remove
   var element = document.getElementById("word");
   element.classList.remove("angry");
 
@@ -58,7 +59,6 @@ function excitedFunction() {
 function angryFunction(){
 
   //remove
-
   var element = document.getElementById("word");
   element.classList.remove("loveletter");
 
@@ -83,7 +83,6 @@ function angryFunction(){
 function loveFunction(){
 
   //remove
-
   var element = document.getElementById("word");
   element.classList.remove("excited");
 
