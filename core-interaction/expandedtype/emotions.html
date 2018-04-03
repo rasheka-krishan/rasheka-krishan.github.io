@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-      <link rel="tylesheet prefetch" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.1/animate.min.css">
+    <link rel="tylesheet prefetch" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.1/animate.min.css">
 
 
       <script type = "text/javascript"
@@ -26,12 +26,12 @@
 
       <div class="leftcolumn">
         <div id="word">
-          <span>d</span>
+          <!-- <span>d</span>
           <span>r</span>
           <span>a</span>
           <span>g</span>
           <span>o</span>
-          <span>n</span>
+          <span>n</span> -->
         </div>
       </div>
 
@@ -49,9 +49,21 @@
     <p id="demo"></p>
 
     <div class="footer">
-        <input type="text" id="input" value="Enter word with at least 4 letters...">
+        <input type="text" id="input" placeholder="Enter word with at least 4 letters...">
         <button id="submit" onclick="userWord()">Submit</button>
     </div>
+    <script>
+      var input = document.getElementById("input");
+      input.addEventListener("keyup", function(event)
+      {
+          event.preventDefault();
+          if (event.keyCode === 13)
+          {
+              document.getElementById("submit").click();
+          }
+      });
+    </script>
+
     <script src="script.js">
     </script>
     <!-- love -->
