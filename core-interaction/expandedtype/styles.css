@@ -119,6 +119,8 @@ img:hover{
 }
 
 
+
+
 .sadthirdtolastletter{
   animation-name: sadthirdtolastletter;
   animation-duration: 3s;
@@ -151,6 +153,7 @@ img:hover{
 
 
 
+
 .angry{
   animation: shake 0.5s;
   animation-iteration-count: infinite;
@@ -171,6 +174,7 @@ img:hover{
     100% { transform: translate(1px, -2px) rotate(-1deg);
         font-size: 200px; color: red; text-transform: uppercase; text-shadow: 10px 5px 10px darkred;}
 }
+
 
 
 
