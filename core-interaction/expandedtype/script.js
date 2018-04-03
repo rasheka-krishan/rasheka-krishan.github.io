@@ -9,7 +9,7 @@ function userWord() {
 
 
 function sadFunction() {
-  
+
   //remove
   var element = document.getElementById("word");
   element.classList.remove("angry");
@@ -22,14 +22,14 @@ function sadFunction() {
 
   //toggle
 
-  var spansArray = document.querySelectorAll('span');
-  spansArray[spansArray.length-3].classList.toggle('sadthirdtolastletter');
+  var spanArray = document.querySelectorAll('span');
+  spanArray[spanArray.length-3].classList.toggle('sadthirdtolastletter');
 
-  var spansArray = document.querySelectorAll('span');
-  spansArray[spansArray.length-2].classList.toggle('sadsecondtolastletter');
+  var spanArray = document.querySelectorAll('span');
+  spanArray[spanArray.length-2].classList.toggle('sadsecondtolastletter');
 
-  var spansArray = document.querySelectorAll('span');
-  spansArray[spansArray.length-1].classList.toggle('sadlastletter');
+  var spanArray = document.querySelectorAll('span');
+  spanArray[spanArray.length-1].classList.toggle('sadlastletter');
 
 }
 
@@ -42,14 +42,14 @@ function excitedFunction() {
   var element = document.getElementById("word");
   element.classList.remove("loveletter");
 
-  var spansArray = document.querySelectorAll('span');
-  spansArray[spansArray.length-3].classList.remove('sadthirdtolastletter');
+  var spanArray = document.querySelectorAll('span');
+  spanArray[spanArray.length-3].classList.remove('sadthirdtolastletter');
 
-  var spansArray = document.querySelectorAll('span');
-  spansArray[spansArray.length-2].classList.remove('sadsecondtolastletter');
+  var spanArray = document.querySelectorAll('span');
+  spanArray[spanArray.length-2].classList.remove('sadsecondtolastletter');
 
-  var spansArray = document.querySelectorAll('span');
-  spansArray[spansArray.length-1].classList.remove('sadlastletter');
+  var spanArray = document.querySelectorAll('span');
+  spanArray[spanArray.length-1].classList.remove('sadlastletter');
 
   //toggle
   var element = document.getElementById("word");
@@ -65,14 +65,14 @@ function angryFunction(){
   var element = document.getElementById("word");
   element.classList.remove("excited");
 
-  var spansArray = document.querySelectorAll('span');
-  spansArray[spansArray.length-3].classList.remove('sadthirdtolastletter');
+  var spanArray = document.querySelectorAll('span');
+  spanArray[spanArray.length-3].classList.remove('sadthirdtolastletter');
 
-  var spansArray = document.querySelectorAll('span');
-  spansArray[spansArray.length-2].classList.remove('sadsecondtolastletter');
+  var spanArray = document.querySelectorAll('span');
+  spanArray[spanArray.length-2].classList.remove('sadsecondtolastletter');
 
-  var spansArray = document.querySelectorAll('span');
-  spansArray[spansArray.length-1].classList.remove('sadlastletter');
+  var spanArray = document.querySelectorAll('span');
+  spanArray[spanArray.length-1].classList.remove('sadlastletter');
 
   //toggle
 
@@ -89,14 +89,14 @@ function loveFunction(){
   var element = document.getElementById("word");
   element.classList.remove("angry");
 
-  var spansArray = document.querySelectorAll('span');
-  spansArray[spansArray.length-3].classList.remove('sadthirdtolastletter');
+  var spanArray = document.querySelectorAll('span');
+  spanArray[spanArray.length-3].classList.remove('sadthirdtolastletter');
 
-  var spansArray = document.querySelectorAll('span');
-  spansArray[spansArray.length-2].classList.remove('sadsecondtolastletter');
+  var spanArray = document.querySelectorAll('span');
+  spanArray[spanArray.length-2].classList.remove('sadsecondtolastletter');
 
-  var spansArray = document.querySelectorAll('span');
-  spansArray[spansArray.length-1].classList.remove('sadlastletter');
+  var spanArray = document.querySelectorAll('span');
+  spanArray[spanArray.length-1].classList.remove('sadlastletter');
 
   //toggle
   var element = document.getElementById("word");
