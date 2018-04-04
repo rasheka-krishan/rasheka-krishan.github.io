@@ -1,3 +1,7 @@
+var indexword = window.location.search.substring(1);
+var spanny_word = '<span>' + indexword.split('').join('</span><span>') + '</span>';
+document.getElementById("word").innerHTML = spanny_word;
+
 function userWord() {
     var word = document.getElementById("input").value;
     var spanny_word = '<span>' + word.split('').join('</span><span>') + '</span>';
@@ -18,7 +22,7 @@ function sadFunction() {
 
   //toggle
 
-  var spanArray = document.querySelectorAll('span');
+  var spanArray = document.querySelectorAll('#word span');
   spanArray[spanArray.length-3].classList.toggle('sadthirdtolastletter');
 
   spanArray[spanArray.length-2].classList.toggle('sadsecondtolastletter');
@@ -35,7 +39,7 @@ function excitedFunction() {
 
   element.classList.remove("loveletter");
 
-  var spanArray = document.querySelectorAll('span');
+  var spanArray = document.querySelectorAll('#word span');
   spanArray[spanArray.length-3].classList.remove('sadthirdtolastletter');
 
   spanArray[spanArray.length-2].classList.remove('sadsecondtolastletter');
@@ -55,7 +59,7 @@ function angryFunction(){
 
   element.classList.remove("excited");
 
-  var spanArray = document.querySelectorAll('span');
+  var spanArray = document.querySelectorAll('#word span');
   spanArray[spanArray.length-3].classList.remove('sadthirdtolastletter');
 
   spanArray[spanArray.length-2].classList.remove('sadsecondtolastletter');
@@ -76,7 +80,7 @@ function loveFunction(){
 
   element.classList.remove("angry");
 
-  var spanArray = document.querySelectorAll('span');
+  var spanArray = document.querySelectorAll('#word span');
   spanArray[spanArray.length-3].classList.remove('sadthirdtolastletter');
 
   spanArray[spanArray.length-2].classList.remove('sadsecondtolastletter');
