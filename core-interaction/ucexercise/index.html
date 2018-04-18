@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Find the Hidden Room</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h1>Find the Hidden Room</h1>
+    <img src="chair.jpg">
+    <button onclick="myFunction()">Get Directions</button>
+    <div id= "myDIV" style="visibility:hidden;">
+      <ol>
+        <li>Walk out of the classroom</li>
+        <li>Turn to the right towards the stairs</li>
+        <li>Go up two flights of stairs to get to the 5th floor</li>
+        <li>Turn right and walk past the computers</li>
+        <li>walk towards the elevator and the red hallway</li>
+        <li>Once past the elevator turn to your left into the white locker hallway</li>
+        <li>Walk to the blue hallway</li>
+        <li>Turn right</li>
+        <li>Once past room 509 turn to the right</li>
+        <li>Turn to the left</li>
+        <li>Take a selfie in the chair</li>
+      </ol>
+    </div>
+
+    <script>
+      function myFunction() {
+        document.getElementById("myDIV").style.visibility = "visible";
+      }
+    </script>
+  </body>
+</html>

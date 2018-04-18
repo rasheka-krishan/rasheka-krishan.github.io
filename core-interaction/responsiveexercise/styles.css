@@ -1,0 +1,98 @@
+@media screen and (min-width: 400px) {
+  body{
+    background-color: #FFE1E6;
+    font-family: 'Cardo', serif;
+  }
+  h1{
+    font-size: 40px;
+    text-align: center;
+  }
+  .intro{
+    font-size: 20px;
+    border-bottom: 3px solid black;
+    text-indent: 2%;
+  }
+  .row{
+    width: 100%;
+  }
+  .column {
+    width: 100%;
+    padding: 10px;
+    display: block;
+    float: none;
+    vertical-align: text-top;
+    }
+    p{
+      font-size: 16px;
+    }
+  img{
+    width:100%;
+  }
+}
+
+
+@media screen and (min-width: 800px) {
+  body{
+    background-color: #FFE1E6;
+    font-family: 'Cardo', serif;
+  }
+    h1{
+      font-size: 45px;
+      text-align: center;
+    }
+    .intro{
+      font-size: 18px;
+      border-bottom: 3px solid black;
+      text-indent: 2%;
+    }
+    .row{
+      width: 100%;
+    }
+    .column {
+      width: 46%;
+      padding-left: 1.5%;
+      padding-right: 1.5%;
+      display: inline-block;
+      vertical-align: text-top;
+      }
+    p{
+      font-size: 16px;
+    }
+    img{
+      width:100%;
+    }
+}
+
+
+@media screen and (min-width: 1200px) {
+  body{
+    background-color: #FFE1E6;
+    font-family: 'Cardo', serif;
+  }
+    h1{
+      font-size: 50px;
+      text-align: center;
+    }
+    .intro{
+      font-size: 20px;
+      border-bottom: 3px solid black;
+      text-indent: 2%;
+    }
+    .row{
+      width: 100%;
+    }
+    .column {
+      width: 29%;
+      float: left;
+      padding-left: 2%;
+      padding-right: 2%;
+      display: inline-block;
+      vertical-align: text-top;
+      }
+    p{
+      font-size: 16px;
+    }
+    img{
+      width:100%;
+    }
+}

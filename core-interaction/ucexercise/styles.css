@@ -1,0 +1,29 @@
+@media screen and (min-width: 400px) {
+  body{
+    background-color: #ECECEC;
+    font-family: helvetica;
+  }
+  h1{
+    font-size: 60px;
+    text-align: center;
+  }
+  img{
+    max-width: 100%;
+    height: auto;
+  }
+  button{
+    background-color: #008CBA;
+    border: none;
+    color: black;
+    width: 100%;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 30px;
+    margin: 4px 2px;
+  }
+
+  li{
+    font-size: 12px;
+  }
+}
