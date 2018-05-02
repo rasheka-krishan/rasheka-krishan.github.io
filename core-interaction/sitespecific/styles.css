@@ -1,0 +1,46 @@
+body{
+  background-color: #a6b2bc;
+}
+#wrapper{
+  position: relative;
+}
+
+#record{
+  position: absolute;
+  display: block;
+  margin-left: 10%;
+  margin-right: 10%;
+  z-index: -1;
+}
+
+.bothwheels{
+  width: 950px;
+  height: 300px;
+  position: absolute;
+  margin-top: 15%;
+}
+
+#wheel1{
+  position: absolute;
+  margin-left: 26.5%;
+  margin-top: 4%;
+  transition: all 1.3s;
+}
+
+#wheel2{
+  position: absolute;
+  margin-left: 55%;
+  margin-top: 4.25%;
+  transition: all 1.6s;
+}
+
+#message{
+  width: 400px;
+  height: 90px;
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  margin-top: 46%;
+  margin-left: 30%;
+  text-align: center;
+}
