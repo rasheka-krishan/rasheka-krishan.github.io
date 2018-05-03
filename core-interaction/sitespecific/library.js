@@ -145,7 +145,7 @@ function swipedetect(el, callback){
 }
 
 function wheel1(){
-  //randomize a number between 1-6, set rotation of image, and how many steps
+  //randomize a number between 1-6, set rotation of image, and get back how many steps
   var number = random(0, 5);
   var rotation = (number*-60) - 360;
   var image1 = document.querySelector('#wheel1');
@@ -154,7 +154,6 @@ function wheel1(){
 }
 
 function wheel2(){
-  //randomize a number between 1-6, set rotation of image, and how many steps
   var number = random(0, 5);
   var directions = ["left", "diagonally right", "backwards", "right", "diagonally left", "forwards"];
   var rotation = (number*-60) - 360;
@@ -166,19 +165,44 @@ function wheel2(){
 
 //USAGE:
 var swipeZone = document.querySelector('.bothwheels');
+var swipeNumber = 0;
 swipedetect(swipeZone, function(swipedir) {
     // swipedir contains either "none", "left", "right", "top", or "down"
+  swipeNumber++;
+  if( swipeNumber < 10){
 
-  if (swipedir == "down") {
-    var steps = wheel1();
-      if(steps == 1){
-        var grammar = " step ";
-      }
-      else {
-        var grammar = " steps ";
-      }
-    var direction = wheel2();
-    var message = document.querySelector('#message');
-    message.innerHTML = message.innerHTML + "<div> Walk " + steps + grammar + direction + "</div>";
+
+    if (swipedir == "down") {
+      var steps = wheel1();
+        if(steps == 1){
+          var grammar = " step ";
+        }
+        else {
+          var grammar = " steps ";
+        }
+      var direction = wheel2();
+      var message = document.querySelector('#message');
+      message.innerHTML = message.innerHTML + "<div> Walk " + steps + grammar + direction + "</div>";
+      message.scrollTop = 100000;
+    }
+
+    else if (swipedir = "up") {
+      var steps = wheel1();
+        if(steps == 1){
+          var grammar = " step ";
+        }
+        else {
+          var grammar = " steps ";
+        }
+      var direction = wheel2();
+      var message = document.querySelector('#message');
+      message.innerHTML = message.innerHTML + "<div> Walk " + steps + grammar + direction + "</div>";
+      message.scrollTop = 100000;
+    }
   }
+
+  else {
+    console.log("Mission Complete");
+  }
+
 });

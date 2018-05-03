@@ -8,39 +8,54 @@ body{
 #record{
   position: absolute;
   display: block;
-  margin-left: 10%;
-  margin-right: 10%;
+  margin-left: 13.5%;
+  margin-top: 3.5%;
   z-index: -1;
 }
 
 .bothwheels{
   width: 950px;
-  height: 300px;
+  height: 320px;
   position: absolute;
-  margin-top: 15%;
+  margin-top: 9%;
 }
 
 #wheel1{
   position: absolute;
-  margin-left: 26.5%;
-  margin-top: 4%;
+  margin-left: 25.8%;
+  margin-top: 6.25%;
   transition: all 1.3s;
 }
 
 #wheel2{
   position: absolute;
-  margin-left: 55%;
-  margin-top: 4.25%;
+  margin-left: 54.3%;
+  margin-top: 6.5%;
   transition: all 1.6s;
 }
 
 #message{
-  width: 400px;
-  height: 90px;
+  width: 373px;
+  max-height: 80px;
   color: white;
   font-size: 20px;
   position: absolute;
-  margin-top: 46%;
-  margin-left: 30%;
+  /* margin-top: 42%; */
+  left: 31.5%;
   text-align: center;
+  overflow-y: auto;
+  bottom: 7%;
+}
+
+#message div:nth-last-of-type(2) {
+  font-size: 23px;
+}
+
+#message div:last-of-type {
+  font-size: 26px;
+}
+
+.end{
+  visibility: hidden;
+
 }
