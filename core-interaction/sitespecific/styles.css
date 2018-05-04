@@ -65,10 +65,14 @@ body{
   /* height: 520px;
   width: 966px; */
   position: relative;
-  opacity:.95;
   /* background-color: black; */
   display:none;
   /* margin-top:5%; */
+}
+
+@keyframes opacity {
+  from {opacity: 0;}
+  to {opacity: .95;}
 }
 
 #end.visible{
@@ -76,6 +80,9 @@ body{
   text-align: center;
   color: white;
   font-size: 26px;
+  animation: opacity 2s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
 }
 
 #blankrecord{
