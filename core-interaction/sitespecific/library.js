@@ -202,7 +202,12 @@ swipedetect(swipeZone, function(swipedir) {
   }
 
   else {
-    console.log("Mission Complete");
+    // console.log("Mission Complete");
+    var lastpage = document.querySelector('#end');
+    lastpage.classList.add("visible");
+
+    var lastwords = document.querySelector('.endword');
+    lastwords.classList.add("visible");
   }
 
 });

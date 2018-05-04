@@ -1,6 +1,12 @@
 body{
   background-color: #a6b2bc;
+  font-family: 'Gothic A1', sans-serif;
 }
+
+.intro{
+  display:none;
+}
+
 #wrapper{
   position: relative;
 }
@@ -38,24 +44,112 @@ body{
   width: 373px;
   max-height: 80px;
   color: white;
-  font-size: 20px;
+  font-size: 18px;
   position: absolute;
   /* margin-top: 42%; */
   left: 31.5%;
   text-align: center;
   overflow-y: auto;
-  bottom: 7%;
+  bottom: 8%;
 }
 
 #message div:nth-last-of-type(2) {
-  font-size: 23px;
+  font-size: 21px;
 }
 
 #message div:last-of-type {
+  font-size: 24px;
+}
+
+#end{
+  /* height: 520px;
+  width: 966px; */
+  position: relative;
+  opacity:.95;
+  /* background-color: black; */
+  display:none;
+  /* margin-top:5%; */
+}
+
+#end.visible{
+  display:block;
+  text-align: center;
+  color: white;
   font-size: 26px;
 }
 
-.end{
-  visibility: hidden;
+#blankrecord{
+  margin-top: 4%;
+  margin-left: .5%;
+}
 
+.endword{
+  position: absolute;
+  bottom: 13%;
+  left:19%
+}
+
+/* .endword{
+  position: absolute;
+} */
+
+
+
+@media only screen and (orientation: portrait) {
+  body{
+    background-color: #a6b2bc;
+    font-family: 'Gothic A1', sans-serif;
+  }
+
+  .intro{
+    font-size: 60px;
+    color: white;
+    display: block;
+    text-align: center;
+    margin-top: 60%;
+  }
+
+  #wrapper{
+    position: relative;
+  }
+
+  #record{
+    display:none;
+  }
+
+  .bothwheels{
+    display:none;
+  }
+
+  #wheel1{
+    display:none;
+  }
+
+  #wheel2{
+    display:none;
+  }
+
+  #message{
+    display: none;
+  }
+
+  #message div:nth-last-of-type(2) {
+    display:none
+  }
+
+  #message div:last-of-type {
+    display:none;
+  }
+
+  #end{
+    display:none;
+  }
+
+  #end.visible{
+    display:none;
+  }
+
+  .endword.visible{
+    display:none;
+  }
 }
