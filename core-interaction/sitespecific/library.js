@@ -162,7 +162,6 @@ function wheel2(){
   return directions[number];
 }
 
-
 //USAGE:
 var swipeZone = document.querySelector('.bothwheels');
 var swipeNumber = 0;
@@ -202,7 +201,6 @@ swipedetect(swipeZone, function(swipedir) {
   }
 
   else {
-    // console.log("Mission Complete");
     var lastpage = document.querySelector('#end');
     lastpage.classList.add("visible");
 
