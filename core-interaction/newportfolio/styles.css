@@ -1,0 +1,143 @@
+body{
+font-family: 'Fjalla One', sans-serif;
+background-color: #c2c2c2;
+}
+
+#first{
+  margin-left: 60%;
+  margin-top: 20%;
+  /* width: 50%;
+  height: 100%; */
+  animation: r 4s forwards;
+  z-index: 0;
+}
+
+#second{
+  margin-left: -3.5%;
+  margin-top: 10.4%;
+  z-index: 0;
+  animation: k 4s forwards;
+  /* width: 50.5%;
+  height: 50.5%; */
+}
+/*
+.letters{
+  width: 10%;
+  height: 10%;
+} */
+
+@keyframes k {
+  0% { transform: translateY(0%); }
+  100% { transform: translateY(97%);}
+}
+/* @keyframes r {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-100px); }
+} */
+
+* {
+    box-sizing: border-box;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 50%;
+    height: 100%; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.firstname{
+  margin-top: 37%;
+}
+/*
+.lastname{
+  margin-top: 10%;
+} */
+
+/* p{
+  z-index: 1;
+} */
+
+
+
+
+
+.css-typing p {
+  font-size: 90px;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.css-typing p:nth-child(1) {
+  width: 4.2em;
+  -webkit-animation: type 2s steps(40, end);
+  animation: type 2s steps(40, end);
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+.css-typing p:nth-child(2) {
+  width: 4.2em;
+  opacity: 0;
+  -webkit-animation: type2 2s steps(40, end);
+  animation: type2 2s steps(40, end);
+  -webkit-animation-delay: 2s;
+  animation-delay: 2s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+@keyframes type {
+  0% {
+    width: 0;
+  }
+  100% {
+    border: none;
+  }
+}
+
+@-webkit-keyframes type {
+  0% {
+    width: 0;
+  }
+  100% {
+    border: none;
+  }
+}
+
+@keyframes type2 {
+  0% {
+    width: 0;
+  }
+  1% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+    border: none;
+  }
+}
+
+@-webkit-keyframes type2 {
+  0% {
+    width: 0;
+  }
+  1% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+    border: none;
+  }
+}
+
+
+/* ::selection{
+  background: blue;
+} */
