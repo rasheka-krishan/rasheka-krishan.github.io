@@ -1,0 +1,116 @@
+
+html, body {
+  background-color: #c2c2c2;
+  padding: 0px;
+  margin: 0px;
+}
+
+header {
+  font-family: 'Cabin Condensed', sans-serif;
+  font-size: 2em;
+  width: 100%;
+  padding-top: .4%;
+  padding-bottom: .8%;
+  margin-bottom: 3.5rem;
+  background-color: black;
+}
+
+nav {
+  text-align: center;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+
+.nav-button {
+  margin: 0 2rem;
+  padding: .85rem;
+}
+
+.nav-button.active {
+  color: #7F7FFF;
+}
+
+/* .swipe {
+    width: 99vw;
+    font-size: 6rem;
+    height: 100vh;
+    position: relative;
+    text-align: center;
+} */
+
+.page {
+    /* padding: 1rem; */
+    display: none;
+}
+
+.page.active {
+  display: block;
+}
+
+
+
+
+
+* {
+    box-sizing: border-box;
+}
+
+.leftcolumn {
+    float: left;
+    width: 60%;
+    padding-bottom: 2rem;
+}
+.rightcolumn {
+    float: left;
+    width: 40%;
+}
+
+.width60{
+  margin-left: 15.5%;
+  width: 65%;
+  height: 65%;
+}
+
+
+img{
+  box-shadow: -5px 3px 8px 3px #888888;
+}
+
+h1{
+  font-family: 'Cabin Condensed', sans-serif;
+  text-align: center;
+  font-size: 40px;
+  padding-top: 2%;
+  margin-right: 20%;
+  margin-top: 0%;
+}
+
+.caption{
+  font-family: 'Roboto', sans-serif;
+  color: black;
+  font-size: 1.2em;
+  margin-right: 20%;
+  text-align: center;
+}
+
+
+
+
+h2{
+  text-align: center;
+  font-size: 3rem;
+  font-family: 'Cabin Condensed', sans-serif;
+}
+
+.aboutme{
+  text-align: center;
+  font-size: 1.5rem;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+
+::selection{
+  background: #7F7FFF;;
+}
